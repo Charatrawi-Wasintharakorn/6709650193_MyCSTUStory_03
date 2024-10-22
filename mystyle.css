@@ -1,0 +1,492 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif; /* Font-family for the page */
+    
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: 1000; /* Make sure navbar is above other content */
+    padding: 25px 5px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.navbar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Banner styling */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url('resources/banner.jpg') no-repeat center center; /* Replace with your image URL */
+    background-size: cover; /* Make sure the image covers the whole area */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color */
+    text-align: center;
+    padding-top: 60px; /* Adjust to prevent content from being hidden under navbar */
+}
+
+.banner-content {
+    max-width: 800px; /* Adjust width of the content */
+    padding: 20px;
+}
+
+.banner h1 {
+    font-size: 3em; /* Adjust font size */
+    margin-bottom: 0.5em;
+    
+}
+
+.banner p {
+    font-size: 1.5em; /* Adjust font size */
+    margin-bottom: 1em;
+}
+
+.banner1 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url('resources/sea.jpg') no-repeat center center; /* Replace with your image URL */
+    background-size: cover; /* Make sure the image covers the whole area */
+    display: flex;
+    color: #000; /* Text color */ 
+    padding-top: 60px; /* Adjust to prevent content from being hidden under navbar */
+}
+
+.banner1-content {
+    max-width: 800px; /* Adjust width of the content */
+    padding: 20px;
+}
+
+.banner2 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url('resources/fl.jpg') no-repeat center center; /* Replace with your image URL */
+    background-size: cover; /* Make sure the image covers the whole area */
+    display: flex; 
+    color: #000; /* Text color */  
+    padding-top: 60px; /* Adjust to prevent content from being hidden under navbar */
+}
+
+.banner2-content {
+    max-width: 800px; /* Adjust width of the content */
+    padding: 20px;
+}
+.banner3 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url('resources/sea1.jpg') no-repeat center center; /* Replace with your image URL */
+    background-size: cover; /* Make sure the image covers the whole area */
+    display: flex; 
+    color: #000; /* Text color */  
+    padding-top: 60px; /* Adjust to prevent content from being hidden under navbar */
+}
+
+.banner3-content {
+    max-width: 800px; /* Adjust width of the content */
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; /* Align items at the start of the flex container */
+    max-width: 1200px; /* Adjust as needed */
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    
+   
+}
+
+.video-container {
+    flex: 1; /* Allow video container to grow */
+    padding: 10px;
+    margin: 150px;
+  
+}
+
+.text-container {
+    flex: 1; /* Allow text container to grow */
+    padding: 50px;
+    background: url('resources/bg.jpg') no-repeat center center;
+    border: 1px solid #ddd; /* Border */
+    border-radius: 8px; /* Rounded corners */
+}
+.text-container a {
+    color: #000;
+}
+.text-container h1 {
+    margin-top: 20px;
+    
+}
+
+.slider{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;  
+    margin: 150px;
+}
+
+.slides{
+    width: 500%;
+    height: 300px;
+    display: flex;
+   
+
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 400px;
+    height: 300px;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 400px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #3300CC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #3300CC;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+
+.container1 {
+    display: flex;
+    align-items: flex-start; /* Align items at the start of the flex container */
+    max-width: 1200px; /* Adjust as needed */
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    
+   
+}
+.text-container1 {
+    flex: 1; /* Allow text container to grow */
+    padding: 50px;
+    background: url('resources/bg.jpg') no-repeat center center;
+    border: 1px solid #ddd; /* Border */
+    border-radius: 8px; /* Rounded corners */
+}
+.text-container1 a{
+    color: #000;
+}
+
+.text-container1 h1 {
+    margin-top: 20px;
+    
+}
+
+footer{
+    text-align: right;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+
+/*Myjourney*/
+
+.banner4 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url('resources/journey.jpg') no-repeat center center; /* Replace with your image URL */
+    background-size: cover; /* Make sure the image covers the whole area */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color */
+    text-align: center;
+    padding-top: 60px; /* Adjust to prevent content from being hidden under navbar */
+}
+
+.banner4-content {
+    max-width: 800px; /* Adjust width of the content */
+    padding: 20px;
+}
+
+.banner4 h1 {
+    font-size: 2.5em; /* Adjust font size */
+    margin-bottom: 0.5em;
+}
+
+.banner4 p {
+    font-size: 1.5em; /* Adjust font size */
+    margin-bottom: 1em;
+}
+
+.banner5 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url('resources/sky.jpg') no-repeat center center; /* Replace with your image URL */
+    background-size: cover; /* Make sure the image covers the whole area */
+    display: flex;
+    color: #000; /* Text color */ 
+    padding-top: 60px; /* Adjust to prevent content from being hidden under navbar */
+}
+
+.banner5-content {
+    max-width: 800px; /* Adjust width of the content */
+    padding: 20px;
+}
+
+.banner6 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url('resources/sky1.jpg') no-repeat center center; /* Replace with your image URL */
+    background-size: cover; /* Make sure the image covers the whole area */
+    display: flex; 
+    color: #000; /* Text color */  
+    padding-top: 60px; /* Adjust to prevent content from being hidden under navbar */
+}
+
+.banner6-content {
+    max-width: 800px; /* Adjust width of the content */
+    padding: 20px;
+}
+.banner7 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url('resources/sky2.jpg') no-repeat center center; /* Replace with your image URL */
+    background-size: cover; /* Make sure the image covers the whole area */
+    display: flex; 
+    color: #000; /* Text color */  
+    padding-top: 60px; /* Adjust to prevent content from being hidden under navbar */
+}
+
+.banner7-content {
+    max-width: 800px; /* Adjust width of the content */
+    padding: 20px;
+}
+
+.banner8 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url('resources/sky3.jpg') no-repeat center center; /* Replace with your image URL */
+    background-size: cover; /* Make sure the image covers the whole area */
+    display: flex;
+    color: #000; /* Text color */ 
+    padding-top: 60px; /* Adjust to prevent content from being hidden under navbar */
+}
+
+.banner8-content {
+    max-width: 800px; /* Adjust width of the content */
+    padding: 20px;
+    
+}
+
+.slider1{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;  
+    margin: 150px;
+}
+
+.slides1{
+    width: 500%;
+    height: 300px;
+    display: flex;
+}
+
+.slides1 input{
+    display: none;
+}
+
+.slide1{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide1 img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+/*myfuture*/
+
+.banner9 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url('resources/future.jpg') no-repeat center center; /* Replace with your image URL */
+    background-size: cover; /* Make sure the image covers the whole area */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color */
+    text-align: center;
+    padding-top: 60px; /* Adjust to prevent content from being hidden under navbar */
+}
+
+.banner9-content {
+    max-width: 800px; /* Adjust width of the content */
+    padding: 20px;
+}
+
+.banner9 h1 {
+    font-size: 2.5em; /* Adjust font size */
+    margin-bottom: 0.5em;
+}
+
+.banner9 p {
+    font-size: 1.5em; /* Adjust font size */
+    margin-bottom: 1em;
+}
+
+.banner10 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url('resources/sky4.jpg') no-repeat center center; /* Replace with your image URL */
+    background-size: cover; /* Make sure the image covers the whole area */
+    display: flex;
+    color: #000; /* Text color */ 
+    padding-top: 60px; /* Adjust to prevent content from being hidden under navbar */
+}
+
+.banner10-content {
+    max-width: 800px; /* Adjust width of the content */
+    padding: 20px;
+}
+
+.banner11 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url('resources/sky5.jpg') no-repeat center center; /* Replace with your image URL */
+    background-size: cover; /* Make sure the image covers the whole area */
+    display: flex; 
+    color: #000; /* Text color */  
+    padding-top: 60px; /* Adjust to prevent content from being hidden under navbar */
+}
+
+.banner11-content {
+    max-width: 800px; /* Adjust width of the content */
+    padding: 20px;
+}
+.banner12 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: url('resources/sky6.jpg') no-repeat center center; /* Replace with your image URL */
+    background-size: cover; /* Make sure the image covers the whole area */
+    display: flex; 
+    color: #000; /* Text color */  
+    padding-top: 60px; /* Adjust to prevent content from being hidden under navbar */
+}
+
+.banner12-content {
+    max-width: 800px; /* Adjust width of the content */
+    padding: 20px;
+}
+
+.slider2{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;  
+    margin: 150px;
+}
+
+.slides2{
+    width: 500%;
+    height: 300px;
+    display: flex;
+}
+
+.slides2 input{
+    display: none;
+}
+
+.slide2{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide2 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+

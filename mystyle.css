@@ -241,7 +241,16 @@ body, html {
     background: url('resources/bg.jpg') no-repeat center center;
     border: 1px solid #ddd; /* Border */
     border-radius: 8px; /* Rounded corners */
-    margin-top: 60px;
+    margin-top:100px;
+    
+}
+.text-container2{
+    flex: 1; /* Allow text container to grow */
+    padding: 50px;
+    background: url('resources/bg.jpg') no-repeat center center;
+    border: 1px solid #ddd; /* Border */
+    border-radius: 8px; /* Rounded corners */
+    margin-top:160px;
     
 }
 .text-container1 a{
@@ -491,11 +500,6 @@ footer{
     border-radius: 50%;
 }
 
-/* Default settings for large screens (desktop) */
-body, html {
-    font-size: 16px; /* Default font-size */
-}
-
 /* Medium screens (tablets) */
 @media (max-width: 1024px) {
     .navbar nav ul {
@@ -504,23 +508,23 @@ body, html {
     }
 
     .banner, .banner1, .banner2, .banner3 {
-        height: 80vh; /* ลดความสูงของ banner */
+        height: 80vh; 
     }
 
     .container, .container1 {
         flex-direction: column; /* Stack elements vertically */
         align-items: center;
-        max-width: 800px; /* Adjust as needed */
+        max-width: 800px; 
         width: 100%;
     }
 
     .video-container {
-        width: 60%; /* ให้กินพื้นที่ของจอ */
+        width: 60%; 
         margin-top: 50px;
         margin-left: 350px;
     }
     .slider{
-        width: 100%; /* ให้กินพื้นที่ของจอ */
+        width: 100%; 
         margin-top: 50px;
     }
     .slides{
@@ -531,10 +535,8 @@ body, html {
         padding: 20px;
         font-size: 1em;
         margin-bottom: 200px;
-        width: 60%; /* ให้กินพื้นที่ของจอ */
-        margin-left: 100px;
-        
-        
+        width: 60%; 
+        margin-left: 100px;   
     }
     .text-container1{
         padding: 20px;
@@ -560,7 +562,7 @@ body, html {
     }
 
     .banner h1 {
-        font-size: 1em;
+        font-size: 2em;
     }
 
     .banner p, .text-container p, .text-container1 p {
@@ -571,15 +573,12 @@ body, html {
         border-radius: 10px;
         margin-left: 5px;
     }
-    
-
     .slider {
         justify-content: center;
         align-items: center;
         max-width: 100%;
         max-height: 100%;
         overflow: hidden; 
-      
     }
     .slide{
         margin-left: 80px;
@@ -587,21 +586,20 @@ body, html {
         max-width: 100%;
         max-height: 100%;
         object-fit: contain; 
+        display: flex;
     }
-
-    .slide img, .slide1 img, .slide2 img {
+    .slide img {
         width: 100%;
         height: auto;
     }
     .video-container {
         justify-content: center;
-        width: 100%; /* ปรับขนาดวิดีโอให้เต็มหน้าจอ */
-        order: -1; /* ย้ายวิดีโอขึ้นมาก่อนกรอบข้อความ */
+        width: 100%; 
+        order: -1; 
     }
-
     .text-container {
         justify-content: center;
-        width: 60%; /* ปรับขนาดกรอบข้อความให้เต็มหน้าจอ */
+        width: 60%; 
         padding: 20px;
     }
     .container{
@@ -609,17 +607,24 @@ body, html {
     }
     .container1{
         align-items: center;
-        max-width: 500px; /* Adjust as needed */
+        max-width: 500px; 
         width: 100%;
         margin-left: -50px;
     }
-    
-
+    .navigation-manual{
+        position: absolute;
+        margin-left: 10px;   
+    }
+    .slide img{
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;  
+    }
     .video {
         max-width: 200px;
-        height: auto; /* ให้ความสูงของวิดีโออัตโนมัติตามความกว้าง */
+        height: auto;
     }
-    
 }
 
 

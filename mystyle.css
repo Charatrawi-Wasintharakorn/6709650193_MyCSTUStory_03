@@ -570,10 +570,12 @@ footer{
 
     .banner h1 {
         font-size: 2em;
+        align-items: center;
     }
 
     .banner p, .text-container p, .text-container1 p {
         font-size: 1em;
+       
     }
     .slides{
         margin-left: 80px;

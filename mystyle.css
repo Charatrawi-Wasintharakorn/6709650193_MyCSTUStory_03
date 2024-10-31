@@ -512,7 +512,7 @@ body, html {
     .container, .container1 {
         flex-direction: column; /* Stack elements vertically */
         align-items: center;
-        max-width: 700px; /* Adjust as needed */
+        max-width: 800px; /* Adjust as needed */
         width: 100%
     }
 
@@ -526,7 +526,7 @@ body, html {
         margin-top: 50px;
     }
     .slides{
-        margin-left: 50px;
+        margin-left: 80px;
         border-radius: 10px;
     }
     .text-container {

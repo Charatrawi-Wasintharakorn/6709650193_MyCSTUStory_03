@@ -4,6 +4,7 @@ body, html {
     height: 100%;
     width: 100%;
     font-family: Arial, sans-serif; /* Font-family for the page */
+    padding-top: 1px;
     
 }
 
@@ -125,7 +126,7 @@ body, html {
     width: 100%;
     justify-items: center;
     align-items: center;
-    
+    flex-direction: row;
    
 }
 
@@ -133,6 +134,7 @@ body, html {
     flex: 1; /* Allow video container to grow */
     padding: 10px;
     margin: 150px;
+    
   
 }
 
@@ -152,8 +154,9 @@ body, html {
 }
 
 .slider{
-    width: 400px;
-    height: 300px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     border-radius: 10px;
     overflow: hidden;  
     margin: 150px;
@@ -222,24 +225,26 @@ body, html {
 }
 #radio5:checked ~ .first{
     margin-left: -80%;
+    
 }
 
 .container1 {
-    display: flex;
-    align-items: flex-start; /* Align items at the start of the flex container */
-    max-width: 1200px; /* Adjust as needed */
-    width: 100%;
     justify-items: center;
     align-items: center;
-    
-   
+    display: flex;
+    align-items: flex-start; /* Align items at the start of the flex container */
+    max-width: 1000px; /* Adjust as needed */
+    width: 100%    
 }
+
 .text-container1 {
     flex: 1; /* Allow text container to grow */
     padding: 50px;
     background: url('resources/bg.jpg') no-repeat center center;
     border: 1px solid #ddd; /* Border */
     border-radius: 8px; /* Rounded corners */
+    margin-top: 60px;
+    
 }
 .text-container1 a{
     color: #000;
@@ -488,5 +493,109 @@ footer{
     border-radius: 50%;
 }
 
+/* Default settings for large screens (desktop) */
+body, html {
+    font-size: 16px; /* Default font-size */
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner, .banner1, .banner2, .banner3 {
+        height: 80vh; /* ลดความสูงของ banner */
+    }
+
+    .container, .container1 {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        max-width: 700px; /* Adjust as needed */
+        width: 100%
+    }
+
+    .video-container {
+        width: 60%; /* ให้กินพื้นที่ของจอ */
+        margin-top: 50px;
+        margin-left: 350px;
+    }
+    .slider{
+        width: 100%; /* ให้กินพื้นที่ของจอ */
+        margin-top: 50px;
+    }
+    .slides{
+        margin-left: 50px;
+        border-radius: 10px;
+    }
+    .text-container {
+        padding: 20px;
+        font-size: 1em;
+        margin-bottom: 200px;
+        width: 60%; /* ให้กินพื้นที่ของจอ */
+        margin-left: 100px;
+        
+        
+    }
+    .text-container1{
+        padding: 20px;
+        font-size: 1em;
+        margin-bottom: 200px;
+        margin-left: 100px;
+        margin-top: 70px;
+    }
+    .banner h1 {
+        font-size: 2em;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 5px;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: right;
+    }
+
+    .banner, .banner1, .banner2, .banner3 {
+        height: 100vh;
+    }
+
+    .banner h1 {
+        font-size: 1em;
+    }
+
+    .banner p, .text-container p, .text-container1 p {
+        font-size: 1em;
+    }
+
+    .slider, .slider1, .slider2 {
+        width: 100%;
+        height: 300px;
+      
+    }
+
+    .slide img, .slide1 img, .slide2 img {
+        width: 100%;
+        height: auto;
+    }
+    .video-container {
+        width: 100%; /* ปรับขนาดวิดีโอให้เต็มหน้าจอ */
+        order: -1; /* ย้ายวิดีโอขึ้นมาก่อนกรอบข้อความ */
+    }
+
+    .text-container {
+        width: 100%; /* ปรับขนาดกรอบข้อความให้เต็มหน้าจอ */
+    }
+
+    .video {
+        max-width: 50%; /* ปรับขนาดวิดีโอภายใน container */
+        height: auto; /* ให้ความสูงของวิดีโออัตโนมัติตามความกว้าง */
+    }
+}
 
 

@@ -569,19 +569,24 @@ body, html {
     .slides{
         margin-left: 80px;
         border-radius: 10px;
+        margin-left: 5px;
     }
     
 
     .slider {
         justify-content: center;
-        width: 100%;
-        height: 200px;
+        align-items: center;
+        max-width: 100%;
+        max-height: 100%;
+        overflow: hidden; 
       
     }
     .slide{
         margin-left: 80px;
         border-radius: 10px;
-        height: 200px;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain; 
     }
 
     .slide img, .slide1 img, .slide2 img {
@@ -599,11 +604,16 @@ body, html {
         width: 60%; /* ปรับขนาดกรอบข้อความให้เต็มหน้าจอ */
         padding: 20px;
     }
+    .container{
+        margin-left: -50px;
+    }
     .container1{
         align-items: center;
         max-width: 500px; /* Adjust as needed */
         width: 100%;
+        margin-left: -50px;
     }
+    
 
     .video {
         max-width: 200px;

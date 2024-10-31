@@ -162,12 +162,10 @@ body, html {
     margin: 150px;
 }
 
-.slides{
+.slides{   
     width: 500%;
     height: 300px;
-    display: flex;
-   
-
+    display: flex; 
 }
 
 .slides input{
@@ -233,7 +231,7 @@ body, html {
     align-items: center;
     display: flex;
     align-items: flex-start; /* Align items at the start of the flex container */
-    max-width: 1000px; /* Adjust as needed */
+    max-width: 1200px; /* Adjust as needed */
     width: 100%    
 }
 
@@ -513,7 +511,7 @@ body, html {
         flex-direction: column; /* Stack elements vertically */
         align-items: center;
         max-width: 800px; /* Adjust as needed */
-        width: 100%
+        width: 100%;
     }
 
     .video-container {
@@ -552,17 +550,13 @@ body, html {
 
 /* Small screens (phones) */
 @media (max-width: 768px) {
-    .navbar {
-        padding: 15px 5px;
-    }
-
     .navbar nav ul {
         flex-direction: column;
-        align-items: right;
+        align-items: center;
     }
 
     .banner, .banner1, .banner2, .banner3 {
-        height: 100vh;
+        height: 120vh;
     }
 
     .banner h1 {
@@ -572,11 +566,22 @@ body, html {
     .banner p, .text-container p, .text-container1 p {
         font-size: 1em;
     }
+    .slides{
+        margin-left: 80px;
+        border-radius: 10px;
+    }
+    
 
-    .slider, .slider1, .slider2 {
+    .slider {
+        justify-content: center;
         width: 100%;
-        height: 300px;
+        height: 200px;
       
+    }
+    .slide{
+        margin-left: 80px;
+        border-radius: 10px;
+        height: 200px;
     }
 
     .slide img, .slide1 img, .slide2 img {
@@ -584,18 +589,27 @@ body, html {
         height: auto;
     }
     .video-container {
+        justify-content: center;
         width: 100%; /* ปรับขนาดวิดีโอให้เต็มหน้าจอ */
         order: -1; /* ย้ายวิดีโอขึ้นมาก่อนกรอบข้อความ */
     }
 
     .text-container {
-        width: 100%; /* ปรับขนาดกรอบข้อความให้เต็มหน้าจอ */
+        justify-content: center;
+        width: 60%; /* ปรับขนาดกรอบข้อความให้เต็มหน้าจอ */
+        padding: 20px;
+    }
+    .container1{
+        align-items: center;
+        max-width: 500px; /* Adjust as needed */
+        width: 100%;
     }
 
     .video {
-        max-width: 50%; /* ปรับขนาดวิดีโอภายใน container */
+        max-width: 200px;
         height: auto; /* ให้ความสูงของวิดีโออัตโนมัติตามความกว้าง */
     }
+    
 }
 
 
